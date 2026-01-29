@@ -2,7 +2,7 @@
 
 ## Data Model
 
-- [ ] Define Job data format:
+- [x] Define Job data format:
   ```
   {
     jobTitle: string,
@@ -10,7 +10,7 @@
     location: string
   }
   ```
-- [ ] Create dummy array of all jobs with sample data:
+- [x] Create dummy array of all jobs with sample data:
   - `{ jobTitle: "Front-End Engineer", classification: "Engineering", location: "Barcelona" }`
   - `{ jobTitle: "Business Administrator", classification: "Administration", location: "Madrid" }`
   - `{ jobTitle: "Surgeon", classification: "Medical", location: "Seville" }`
@@ -18,11 +18,11 @@
 
 ## API Endpoints
 
-- [ ] **View All API** -- Return array of all jobs
-- [ ] **Add Job API** -- Add a new job to the collection
-- [ ] **Delete Job API** -- Delete a job from the collection
-- [ ] **Update Job API** -- Update an existing job in the collection
+- [x] **View All API** -- Return array of all jobs
+- [x] **Add Job API** -- Add a new job to the collection
+- [x] **Delete Job API** -- Delete a job from the collection
+- [x] **Update Job API** -- Update an existing job in the collection
 
 ## Data Processing
 
-- [ ] Jobs returned in array format with support for array filter method (filtered data)
+- [x] Jobs returned in array format with support for array filter method (filtered data)
