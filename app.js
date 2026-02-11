@@ -2,16 +2,12 @@ const express = require("express");
 const cors = require("cors");
 const fs = require("fs");
 const path = require("path");
-const cors = require('cors');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-
-app.use(cors());
 const DB_PATH = path.join(__dirname, "db.json");
 
-
-app.use(cors()); // This allows your React app to fetch data
+app.use(cors());
 app.use(express.json());
 
 function readDb() {
