@@ -57,7 +57,7 @@ app.post("/api/jobs", (req, res) => {
 app.put("/api/jobs/:id", (req, res) => {
   const id = parseInt(req.params.id, 10);
   const { jobTitle, classification, location } = req.body;
-
+  console.log(jobTitle, classification, location);
   const db = readDb();
   const index = db.jobs.findIndex((job) => job.id === id);
 
@@ -72,6 +72,7 @@ app.put("/api/jobs/:id", (req, res) => {
   writeDb(db);
 
   res.json(db.jobs[index]);
+  // res.json(req.body)
 });
 
 // Delete Job API - Delete a job from the collection
